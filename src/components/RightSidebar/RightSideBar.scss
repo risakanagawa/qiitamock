@@ -1,109 +1,152 @@
 .sidebar__container {
-    margin-top: 200px;
-
+  margin-top: 200px;
 }
 
 .sidebar {
-    background: #fff;
-    margin: 10px 0;
+  background: #fff;
+  margin: 10px 0;
 }
 
-
 .userinfo {
-    &--top{
-        display: flex;
-        align-items: center;
-        height: 80px;
-        padding: 0px 10px;
-        h1 {
-            padding: 8px 14px;
-            border-radius: 25px;
-            background: #1670b2;
-            color: #fff;
-        }
-        h5{
-            color: #777777;
-            font-size: 1rem;
-            padding: 0 10px;
-        }
+  &--top {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 0px 10px;
+    h1 {
+      padding: 8px 14px;
+      border-radius: 25px;
+      background: #1670b2;
+      color: #fff;
     }
-    &--bottom {
-        display: flex;
-        justify-content: center;
-        border-top: 1px solid #d4d4d4;
-        &--box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 70px;
-            width: 100px;
-            align-self: center;
+    h5 {
+      color: #777777;
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+  }
+  &--bottom {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #d4d4d4;
+    &--box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 70px;
+      width: 100px;
+      align-self: center;
 
-            text-align: center;
-            border-right: 1px solid #b4b4b4;
-            h5 {
-                font-size: 1.3rem;
-            }
-            span {
-                font-size: .8rem;
-                color: #777777;
-            }
-            &:last-child {
-                border: none;
-            }
-        }
+      text-align: center;
+      border-right: 1px solid #b4b4b4;
+      h5 {
+        font-size: 1.3rem;
+      }
+      span {
+        font-size: 0.8rem;
+        color: #777777;
+      }
+      &:last-child {
+        border: none;
+      }
     }
+  }
 }
 
 .reccomendation {
-    padding: 10px 5px;
+  padding: 10px 5px;
 }
 
 .ranking {
-    padding: 10px 5px;
-    &--top {
-        display: flex;
-        justify-content: space-between;
-        ul li{
-            display: inline-block;margin-right: 10px;
-            font-size: .8rem;
-            color: #d1d1d1;
-        }
+  padding: 10px 5px;
+  &--top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    ul li {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 0.8rem;
+      color: #d1d1d1;
     }
+  }
+  &__list {
+    margin: 0px 20px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #d4d4d4;
+    img {
+      width: 40px;
+    }
+    span {
+        color: #777777;
+      }
+    &--info {
+      display: flex;
+      align-items: center;
+    }
+    &--rank {
+      width: 30px;
+      color: #777777;
+      text-align: center;
+      svg {
+        width: 30px;
+      }
+    }
+    &--box {
+      margin: 0 10px;
+      display: flex;
+      align-items: center;
+    }
+    &--detail {
+      width: 120px;
+      margin-left: 10px;
+      padding: 5px;
+      h2 {
+        font-size: 0.9rem;
+      }
+    }
+    &--contribution {
+      text-align: center;
+      h2 {
+        font-weight: bold;
+      }
+    }
+  }
 }
 
 .community-sponsors {
-    padding: 10px 5px;
-    &--body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        .sponsor-img {
-            padding: 20px 0;
-            border-bottom: 1px solid #b4b4b4;
-            &:last-child {
-                border: none;
-            }
-        }
-        img {
-            max-width: 200px;
-        }
+  padding: 10px 5px;
+  &--body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .sponsor-img {
+      padding: 20px 0;
+      border-bottom: 1px solid #b4b4b4;
+      &:last-child {
+        border: none;
+      }
     }
-    &--bottom {
-        text-align: right;
-        span{
-            font-size: .7rem;
-            color: #b4b4b4;
-        }
+    img {
+      max-width: 200px;
     }
+  }
+  &--bottom {
+    text-align: right;
+    span {
+      font-size: 0.7rem;
+      color: #b4b4b4;
+    }
+  }
 }
-
 
 .sidebar--ad {
-    img {
-        max-width: 300px;
-    }
+  img {
+    max-width: 300px;
+  }
 }
-

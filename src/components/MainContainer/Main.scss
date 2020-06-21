@@ -39,9 +39,8 @@
     text-align: center;
     color: #565656;
     display: inline-block;
-    font-weight: bold;
   }
-  
+
   input[name="tab_item"] {
     display: none;
   }
@@ -67,4 +66,33 @@
     background: #55c600;
     color: #fff;
   }
+}
+
+//List
+
+.article {
+    display: flex;
+    padding: 15px 10px;
+    border-bottom: 1px solid #dfdfdf;
+
+    &--icon {
+        img {
+            max-width: 50px;
+        }
+    }
+    &--detail{
+        padding-left: 15px;
+        h2 {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        span {
+            color: #565656;
+            font-size: .8rem;
+            margin-right: 5px;
+            &:nth-child(3) {
+                font-weight: bold;
+            }
+        }
+    }
 }

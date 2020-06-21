@@ -1,7 +1,11 @@
 
-
-
 @mixin tablet {
+    @media only screen and (max-width: 769px) {
+        @content
+    };
+}
+
+@mixin tabletb {
     @media only screen and (max-width: 769px) {
         @content
     };

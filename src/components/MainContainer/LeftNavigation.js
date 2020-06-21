@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./responsiveMain.scss";
 
 const LeftNavigation = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -18,7 +19,7 @@ const LeftNavigation = () => {
         <select name="menu" id="menu" className="mobile__menu--select">
           <option value="trend">トレンド</option>
           <option value="timeline">タイムライン</option>
-          <option value="tags">タグフォールド</option>
+          <option value="tags">タグフィールド</option>
           <option value="milestones">マイルストーン</option>
         </select>
       </div>
@@ -52,7 +53,7 @@ const LeftNavigation = () => {
     );
   };
 
-  return width > 700 ? desktopMenu() : mobileMenu();
+  return width > 480 ? desktopMenu() : mobileMenu();
 };
 
 export default LeftNavigation;

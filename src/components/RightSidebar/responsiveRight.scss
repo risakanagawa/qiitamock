@@ -1,22 +1,54 @@
 @import "../../App.scss";
 
-@include tablet {
-    .ranking {
-        &__list {
-            margin: 0px 5px;
-            justify-content: space-between;
-            &--detail {
-                width: auto;
-            }
-            &--contribution {
-                h2 {
-                    font-size: 1rem;
-                }
-                span {
-                    font-size: .6rem;
-                }
-            }
-        }
-
+@include big-tablet {
+    .ranking__list {
+        justify-content: space-between;
     }
+
+    .sidebar__container {
+        .sponsor-img {
+            width: 100%;
+            text-align: center;
+          img {
+            max-width: 300px;
+          }
+        }
+      }
+}
+
+@include tablet {
+  .ranking {
+    &__list {
+      margin: 0px 5px;
+      justify-content: space-between;
+      &--detail {
+        width: auto;
+      }
+      &--contribution {
+        h2 {
+          font-size: 1rem;
+        }
+        span {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+    .reccomendation {
+      span {
+        &:last-child {
+          color: #3f3f3f;
+          background: transparent;
+          padding: 3px 5px;
+        }
+      }
+    }
+  
+  .sidebar__container {
+    .sponsor-img {
+      img {
+        max-width: 200px;
+      }
+    }
+  }
 }

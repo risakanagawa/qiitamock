@@ -336,6 +336,13 @@
   }
 }
 
+.dropdown--notification--bottom {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
 *:focus {
   outline: none;
 }

@@ -1,0 +1,29 @@
+@import "../../App.scss";
+
+@include tablet {
+    .container__flex {
+        padding-top: 10px;
+        .left__navigation {
+            display: flex;
+            height: auto;
+            position: static;
+            width: 100%;
+    
+            label svg {
+                display: none;
+            }
+    
+            .list_item {
+                padding: 10px 20px;  
+                border-radius: 5px;
+                text-align: center;
+
+            }
+    
+            label .list_item{
+                padding: 10px 20px;
+            }
+        }
+    }
+
+}

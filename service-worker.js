@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/qiitamock/precache-manifest.729da37c095bd80ca43129d44eb7c290.js"
+  "/qiitamock/precache-manifest.810049bf859258027a3e1d590cf4f038.js"
 );
 
 self.addEventListener('message', (event) => {

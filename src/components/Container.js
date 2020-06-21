@@ -1,5 +1,4 @@
 import React from "react";
-import LeftNavigation from "./MainContainer/LeftNavigation";
 import MainContainer from "./MainContainer/MainContainer";
 import RightSidebar from "./RightSidebar/RightSidebar";
 

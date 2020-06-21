@@ -18,7 +18,7 @@
   margin: 0 auto;
   height: inherit;
   color: #fff;
-  font-size: .8rem;
+  font-size: 0.8rem;
   &__left,
   &__right {
     display: flex;
@@ -51,6 +51,7 @@
     background: #edfde2;
     color: #3c8a08;
     border-radius: 5px;
+    cursor: pointer;
   }
 
   .user__icons {
@@ -157,7 +158,6 @@
 .footer__container {
   background: #3e3e3e;
   color: #b3b3b3;
-  height: 300px;
 }
 
 .footer {
@@ -165,8 +165,8 @@
   justify-content: space-between;
   width: 70%;
   margin: 0 auto;
-  padding: 30px;
-
+  padding: 30px 0;
+  height: 300px;
   h1,
   h3,
   span {
@@ -174,6 +174,9 @@
   }
   h3 {
     font-weight: bold;
+  }
+  p {
+    font-size: .9rem;
   }
   &__left {
     display: flex;
@@ -205,7 +208,7 @@
     &--column {
       display: flex;
       flex-direction: column;
-      margin-right: 20px;
+      margin-right: 40px;
       color: #b3b3b3;
       a {
         color: #b3b3b3;
@@ -213,4 +216,124 @@
       }
     }
   }
+}
+
+//dropdown
+
+.dropdown--team {
+  position: absolute;
+  width: 220px;
+  height: 120px;
+  top: 30px;
+  left: 11%;
+  background: #fff;
+  color: gray;
+  z-index: 10;
+  border-radius: 2px;
+  box-shadow: 0 0 10px #d3d3d3;
+  flex-direction: column;
+  &--top {
+    padding: 0 10px;
+    color: #000;
+    height: 50px;
+    line-height: 50px;
+  }
+  &--bottom {
+    height: 50%;
+    width: 100%;
+    border-top: 1px solid #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    span {
+      text-align: center;
+      font-weight: bold;
+    }
+    a {
+      line-height: 45px;
+      height: 100%;
+      width: 100%;
+      color: #000;
+      &:hover {
+        background: #ececec;
+      }
+    }
+  }
+}
+
+.user {
+  position: relative;
+  .dropdown--user {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 190px;
+    color: #000;
+    background: #fff;
+    flex-direction: column;
+    z-index: 10;
+    border-radius: 2px;
+    box-shadow: 0 0 10px #d3d3d3;
+    hr {
+      border-top: 1px solid #ececec;
+      width: 100%;
+    }
+    a {
+      display: flex;
+      font-size: 0.8rem;
+      color: #3e3e3e;
+      padding: 10px 20px;
+    }
+    svg {
+      margin-right: 10px;
+    }
+  }
+}
+
+.dropdown--community{
+  position: absolute;
+  top: 30px;
+  width: 190px;
+  color: #000;
+  background: #fff;
+  flex-direction: column;
+  z-index: 10;
+  border-radius: 2px;
+  box-shadow: 0 0 10px #d3d3d3;
+  hr {
+    border-top: 1px solid #ececec;
+    width: 100%;
+  }
+  a {
+    display: flex;
+    font-size: 0.8rem;
+    color: #3e3e3e;
+    padding: 10px 20px;
+  }
+  svg {
+    margin-right: 10px;
+  }
+}
+
+
+.dropdown--notification {
+  position: absolute;
+  top: 50px;
+  right: 15%;
+  width: 240px;
+  height: 200px;
+  color: #000;
+  background: #fff;
+  text-align: center;
+  z-index: 10;
+  border-radius: 2px;
+  box-shadow: 0 0 10px #d3d3d3;
+  &--top {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+*:focus {
+  outline: none;
 }

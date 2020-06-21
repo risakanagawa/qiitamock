@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const RankingList = ({ list, num }) => {
   const { name, id, number_of_contributions } = list;
-
   const istrophy = (num) => {
     switch (num + 1) {
       case 1:
@@ -37,7 +36,7 @@ const RankingList = ({ list, num }) => {
   };
 
   return (
-    <div className="ranking__list">
+    <div className="ranking__list" >
       <div className="ranking__list--info">
         <div className="ranking__list--rank">{istrophy(num)}</div>
         <div className="ranking__list--box">
@@ -47,7 +46,7 @@ const RankingList = ({ list, num }) => {
           <div className="ranking__list--detail">
             <h2>{name}</h2>
             <div className="ranking__list--meta">
-              <span>{list.img ? null : `@${id}`}</span>
+              <span>{list.id ? `@${id}` : null}</span>
             </div>
           </div>
         </div>

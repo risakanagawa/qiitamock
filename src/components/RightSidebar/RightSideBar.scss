@@ -1,5 +1,6 @@
 .sidebar__container {
   margin-top: 200px;
+  max-width: 350px;
 }
 
 .sidebar {
@@ -56,6 +57,21 @@
 
 .reccomendation {
   padding: 10px 5px;
+  &-list {
+    padding: 10px 10px;
+  }
+  p {
+padding: 5px;
+  }
+  span {
+    color: #b4b4b4;
+    font-size: .7rem;
+    &:last-child{
+      color: #3f3f3f;
+      background: #d4d4d4;
+      padding: 3px 5px;
+    }
+  }
 }
 
 .ranking {
@@ -79,7 +95,7 @@
     font-size: 0.8rem;
     border-bottom: 1px solid #d4d4d4;
     img {
-      width: 40px;
+      width: 30px;
     }
     span {
         color: #777777;
@@ -116,6 +132,14 @@
       }
     }
   }
+  &--bottom {
+    text-align: right;
+    padding: 10px 0;
+    span {
+      font-size: 0.7rem;
+      color: #777777;
+    }
+  }
 }
 
 .community-sponsors {
@@ -136,13 +160,7 @@
       max-width: 200px;
     }
   }
-  &--bottom {
-    text-align: right;
-    span {
-      font-size: 0.7rem;
-      color: #b4b4b4;
-    }
-  }
+
 }
 
 .sidebar--ad {

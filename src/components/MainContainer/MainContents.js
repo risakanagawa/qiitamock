@@ -31,8 +31,8 @@ const MainContents = ({ lists }) => {
         </label>
       </div>
       <div className="article-list">
-        {lists.map((list) => (
-          <List list={list} />
+        {lists.map((list,idx) => (
+          <List list={list} key={idx}/>
         ))}
       </div>
     </div>
@@ -40,7 +40,6 @@ const MainContents = ({ lists }) => {
 };
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return { lists: state.articles };
 };
 

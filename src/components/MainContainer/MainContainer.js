@@ -1,5 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import LeftNavigation from "./LeftNavigation";
 import MainContents from "./MainContents";
 

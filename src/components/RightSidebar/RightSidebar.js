@@ -14,9 +14,10 @@ import RankingList from "./RankingList";
 const RightSidebar = ({ users, tags, companies }) => {
   return (
     <div className="sidebar__container">
-      <div className="sidebar sidebar--ad">
-        <img src={adImage} alt="" />
+      <div className=" sidebar--ad">
+        <img src={adImage} alt="adimage" />
       </div>
+      
       <div className="sidebar userinfo">
         <div className="userinfo--top">
           <h1>G</h1>
@@ -40,8 +41,21 @@ const RightSidebar = ({ users, tags, companies }) => {
         </div>
       </div>
       <div className="sidebar reccomendation">
-        <span>Qiita Zine おすすめ記事</span>
-        <div className="reccomendation-row"></div>
+        <p>Qiita Zine おすすめ記事</p>
+        <div className="reccomendation-row">
+          <div className="reccomendation-list">
+            <p>自分の備忘録がみんなの参考書に。ゲームエンジンUnityをマスターしたVRクリエイター</p>
+            <span>2020/04/30</span> <span>PR, プロダクト</span>
+          </div>
+          <div className="reccomendation-list">
+            <p>U-22プログラミング・コンテスト2020 “行くぞ！「MIRAI PASS」” 応募要項発表</p>
+            <span>2020/04/30</span> <span>PR, プロダクト</span>
+          </div>
+          <div className="reccomendation-list">
+            <p>『Qiitaユーザーが選ぶ、2019年に読んで良かった技術書』アンケート結果発表</p>
+            <span>2020/04/30</span> <span>PR, プロダクト</span>
+          </div>
+        </div>
       </div>
       <div className="sidebar ranking">
         <div className="ranking--top">
@@ -54,7 +68,7 @@ const RightSidebar = ({ users, tags, companies }) => {
         </div>
         <div className="user-ranking--body">
           {users.map((user, idx) => (
-            <RankingList list={user} num={idx} />
+            <RankingList list={user} num={idx} key={idx}/>
           ))}
         </div>
       </div>
@@ -69,10 +83,9 @@ const RightSidebar = ({ users, tags, companies }) => {
           </ul>
         </div>
         <div className="tag-ranking--body">
-        {tags.map((tag, idx) => (
-            <RankingList list={tag} num={idx} />
+          {tags.map((tag, idx) => (
+            <RankingList list={tag} num={idx} key={idx} />
           ))}
-
         </div>
       </div>
       <div className="sidebar ranking">
@@ -84,12 +97,16 @@ const RightSidebar = ({ users, tags, companies }) => {
           </ul>
         </div>
         <div className="organization-ranking--body">
-        {companies.map((company, idx) => (
-            <RankingList list={company} num={idx} />
+          {companies.map((company, idx) => (
+            <RankingList list={company} num={idx} key={idx}/>
           ))}
-
         </div>
-        <div className="orgatization-ranking--bottom">Organization一覧</div>
+        <div className="ranking--bottom">
+          <span>
+            <FontAwesomeIcon icon={["fas", "arrow-circle-right"]} />
+            Organization一覧
+          </span>
+        </div>
       </div>
       <div className="sidebar community-sponsors">
         <span>コミュニティスポンサー</span>
@@ -107,9 +124,9 @@ const RightSidebar = ({ users, tags, companies }) => {
             <img src={pasona} alt="" />
           </div>
         </div>
-        <div className="community-sponsors--bottom">
+        <div className="ranking--bottom">
           <span>
-            <FontAwesomeIcon icon={["fas", "info-circle"]} />{" "}
+            <FontAwesomeIcon icon={["fas", "info-circle"]} />
             コミュニティスポンサーについて
           </span>
         </div>
@@ -119,7 +136,6 @@ const RightSidebar = ({ users, tags, companies }) => {
 };
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return { users: state.users, tags: state.tags, companies: state.companies };
 };
 

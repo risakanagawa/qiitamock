@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { connect } from "react-redux";
 
 import "./RightSideBar.scss";
+import "./responsiveRight.scss"
 import adImage from "../../img/ad.png";
 
 import draft from "../../img/sponsors/tenshokudraft.png";
@@ -61,7 +62,7 @@ const RightSidebar = ({ users, tags, companies }) => {
         <div className="ranking--top">
           <span>ユーザーランキング</span>
           <ul>
-            <li>週間</li>
+            <li className="active">週間</li>
             <li>月間</li>
             <li>全て</li>
           </ul>
@@ -77,7 +78,7 @@ const RightSidebar = ({ users, tags, companies }) => {
         <div className="ranking--top">
           <span>タグ・ランキング</span>
           <ul>
-            <li>週間</li>
+            <li className="active">週間</li>
             <li>月間</li>
             <li>全て</li>
           </ul>
@@ -92,7 +93,7 @@ const RightSidebar = ({ users, tags, companies }) => {
         <div className="ranking--top">
           <span>Organizationランキング</span>
           <ul>
-            <li>週間</li>
+            <li className="active">週間</li>
             <li>月間</li>
           </ul>
         </div>

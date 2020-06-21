@@ -1,0 +1,101 @@
+@import "../App.scss";
+
+@include big-tablet {
+  .container{
+    &__flex {
+      flex-wrap: wrap;
+    }
+    .center__container {
+      width: auto;
+      flex-grow: 1;
+    }
+  }
+  .sidebar__container {
+    max-width: calc(100% - 180px);
+    margin: 0;
+    margin-left: auto;
+    margin-top: 100px;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+@include tablet {
+  .container {
+    &__flex {
+      flex-wrap: wrap;
+
+      padding-top: 60px;
+    }
+    .center__container {
+      margin: 0 10px;
+      .center__header {
+        h3 {
+          display: none;
+        }
+      }
+      .tab-selection {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        label {
+          width: 80px;
+        }
+      }
+    }
+  }
+  .sidebar__container {
+    width: 95%;
+    .sidebar--ad {
+      img {
+        max-width: 100%;
+      }
+    }
+    .userinfo {
+      display: none;
+    }
+  }
+}
+
+.mobile__menu {
+  margin: 0 auto;
+  position: relative;
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    color: #55c600;
+    border: none;
+    width: 95vw;
+    padding: 10px;
+    font-size: 1.1rem;
+
+    margin-bottom: 10px;
+    height: 40px;
+    background: #ffffff;
+    position: relative;
+    z-index: 1;
+    padding: 0 40px 0 10px;
+    border-radius: 2px;
+  }
+  select::-ms-expand {
+    display: none;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    margin-top: -4px;
+    width: 0;
+    height: 0;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top: 5px solid #777777;
+    border-bottom-width: 0;
+    z-index: 1;
+  }
+}

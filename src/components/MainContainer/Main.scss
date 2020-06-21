@@ -56,7 +56,9 @@
   position: -webkit-sticky;
   top: 0;
   height: 500px;
-  li {
+
+  .list_item {
+    display: block;
     cursor: pointer;
     padding: 10px 5px 10px 20px;
     margin: 5px 0;
@@ -70,7 +72,11 @@
       background: #dfdfdf;
     }
   }
-  li.active {
+
+  input[name="list_item"] {
+    display: none;
+  }
+   input:checked + .list_item {
     background: #55c600;
     color: #fff;
   }
@@ -81,7 +87,7 @@
 .article {
     display: flex;
     padding: 15px 10px;
-    border-bottom: 1px solid #ededed;
+    border-bottom: 1px solid #dfdfdf;
 
     &--icon {
         img {

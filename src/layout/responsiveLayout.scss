@@ -1,0 +1,143 @@
+@import "../App.scss";
+
+
+@include tablet {
+  .header {
+    width: 95%;
+    form {
+      position: inherit;
+  }
+
+    &__right {
+      width: 40%;
+      .stock {
+        padding: 5px;
+        a {
+          display: none;
+        }
+      }
+      .post {
+        display: none;
+      }
+    }
+    .arrow--community,
+    .desktop--form {
+      display: none;
+    }
+  }
+  .footer {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 2rem 1rem;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    .title {
+      font-size: 3rem;
+      margin: 0;
+    }
+    h3 {
+      font-size: 0.9rem;
+    }
+    &__left {
+      justify-content: space-around;
+    }
+    &__right {
+      margin-top: 30px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      height: auto;
+    }
+    .company__list {
+      flex-direction: column;
+      margin: 10px 0;
+      &--column {
+        flex-direction: row;
+        a {
+          margin-right: 10px;
+        }
+      }
+    }
+    .footer__right--increments {
+      width: 100%;
+      &--column {
+        flex-direction: row;
+      }
+    }
+
+    &__bottom {
+      padding: 1rem;
+      font-size: 0.8rem;
+    }
+  }
+
+  .isOpen {
+    display: block;
+}
+.mobile__form--box {
+  display: none;
+}
+
+.mobile__form {
+  input {
+      position: absolute;
+      font-size: 1rem;
+      left: 0;
+      right: 0;
+      width: 95%;
+      margin: 0 auto;
+      top: 70px;
+      height: 50px;
+      padding: 5px 10px;
+      box-shadow:  0 0 5px #777777;
+      z-index: 10;
+    }
+}
+ 
+}
+
+@include big-tablet {
+  .header {
+    form {
+      position: inherit;
+  }
+    &__left {
+      width: auto;
+      .desktop--form {
+        input {
+          display: none;
+        }
+        svg {
+          position: relative;
+          path {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+
+
+  .isOpen {
+    display: block;
+}
+.mobile__form--box {
+  display: none;
+}
+
+.mobile__form {
+  input {
+      position: absolute;
+      font-size: 1rem;
+      left: 0;
+      right: 0;
+      width: 95%;
+      margin: 0 auto;
+      top: 70px;
+      height: 50px;
+      padding: 5px 10px;
+      box-shadow:  0 0 5px #777777;
+      z-index: 10;
+    }
+}
+}

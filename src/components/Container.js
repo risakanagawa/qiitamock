@@ -1,14 +1,16 @@
 import React from "react";
-import MainContainer from "./MainContainer/MainContainer";
 import RightSidebar from "./RightSidebar/RightSidebar";
-
-import "./Container.scss"
+import LeftNavigation from "./MainContainer/LeftNavigation";
+import MainContents from "./MainContainer/MainContents";
+import "./Container.scss";
+import "./responsiveContents.scss";
 
 const Container = () => {
   return (
     <div className="container">
       <div className="container__flex">
-        <MainContainer />
+        <LeftNavigation />
+        <MainContents />
         <RightSidebar />
       </div>
     </div>

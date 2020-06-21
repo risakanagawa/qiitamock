@@ -14,9 +14,6 @@ const Footer = () => {
               <li><FontAwesomeIcon icon={["fab", "facebook-square"]} /></li>
             </ul>
           </div>
-          <div className="footer__left--bottom">
-            <p>© 2011-2020 Increments Inc.</p>
-          </div>
         </div>
         <div className="footer__right">
           <div className="footer__right--company">
@@ -54,6 +51,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="footer__bottom">
+            <p>© 2011-2020 Increments Inc.</p>
+          </div>
     </div>
   );
 };

@@ -6,14 +6,14 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import logo from './logo.svg';
 import './App.scss';
 import Layout from './layout/Layout';
-import MainContainer from './components/MainContainer';
+import Container from './components/Container';
 
 library.add(fab, fas);
 
 function App() {
   return (
     <Layout >
-      <MainContainer />
+      <Container />
     </Layout>
   );
 }

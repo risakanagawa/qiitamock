@@ -47,7 +47,7 @@ const Footer = () => {
               </div>
               <div className="company__list--column">
                 <a href="/">Qiita Team</a>
-                <a href="/">Qiita Jobsa</a>
+                <a href="/">Qiita Jobs</a>
                 <a href="/">Qiita Zine</a>
               </div>
             </div>
